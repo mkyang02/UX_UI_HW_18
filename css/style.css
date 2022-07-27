@@ -98,38 +98,28 @@ p {
     line-height: 22px;
     padding: 10px;
 }
+ /*----MY UX SKILLS USING CSS GRIDS----*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    background-color: none;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: #fc434962;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 
-.row-first {
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.row-second {
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;    
-}
-
-.skills-col {
-    flex-basis: 31%;
-    background-color: #fc434996;
-    border-radius: 10px;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-h3 {
+  h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-
-.skills-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-
 
 /*-----MY WORK SECTION------*/
 .work {
@@ -144,6 +134,8 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .work-container img {
     width: 50%;
